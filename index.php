@@ -84,11 +84,12 @@ function porestado($ordentes)
     }
 
     $total['completadas'] = ['cant' => count($completadas), 'total' => $totalcompletada];
+
     $totalcancelada = 0;
     foreach ($cancelada as $pendiente) {
         $totalcancelada += $pendiente->totalOrden();
     }
 
-    $total['completadas'] = ['cant' => count($cancelada), 'total' => $totalcancelada];
+    $total['canceladas'] = ['cant' => count($cancelada), 'total' => $totalcancelada];
     return $total;
 }
