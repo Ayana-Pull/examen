@@ -53,11 +53,12 @@ class Ordenes
     public function totalOrden(): int
     {
         $total = array_filter($this->lista_servicios, function ($servicios) {
+            var_dump($servicios->getPrecio());
             return $servicios->getPrecio();
         });
         $totalsum = 0;
         foreach ($total as $t) {
-            $totalsum += $t;
+            $totalsum = $totalsum + $t->getPrecio();;
         }
         return $totalsum;
     }

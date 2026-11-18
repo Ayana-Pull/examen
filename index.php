@@ -41,7 +41,7 @@ function totalporden($total)
 
 var_dump("total de la orden1");
 
-var_dump($ordenes1->totalOrden());
+var_dump($ordenes1);
 //Resumen por estado de todos las ordenes
 var_dump(porestado($ordentes));
 // por usuario
