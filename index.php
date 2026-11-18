@@ -27,6 +27,7 @@ $cliente2->aumentarOrden($ordenes2);
 $cliente2->aumentarOrden($ordenes3);
 
 // total de una orden
+var_dump("------ejercico 1-------------------------------\n");
 $total = $cliente1->getListaOrdenes();
 var_dump("total de cada orden del cliente {$cliente1->getNombre()}\n");
 
@@ -44,7 +45,7 @@ var_dump("-------------------------------------\n");
 var_dump("total de la orden1");
 var_dump($ordenes1->totalOrden());
 
-var_dump("-------------------------------------\n");
+var_dump("------ejercico 4-------------------------------\n");
 var_dump("Resumen por estado de todos las ordenes\n");
 var_dump(porestado($ordentes));
 //Resumen por estado de todos las ordenes
